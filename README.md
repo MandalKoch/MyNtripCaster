@@ -32,22 +32,32 @@ The **Gateway** is a dumb TCP connection holder. It mints a per-connection GUIDv
 
 Full details, module responsibilities, and conventions are in [`CLAUDE.md`](./CLAUDE.md).
 
-## Third-party tools and libraries
+## Open-source shoutouts
 
-Built on the shoulders of these excellent projects:
+Built on the shoulders of these excellent open-source projects — thank you to the maintainers:
 
-| Tool / Library | Purpose | Link |
+### Libraries
+
+| Project | Purpose | Link |
 |---|---|---|
-| **.NET 10 / C#** | Runtime and language | <https://dotnet.microsoft.com> |
-| **.NET Aspire** | App host, service discovery, local orchestration | <https://learn.microsoft.com/dotnet/aspire/> |
 | **Wolverine** (JasperFx) | Message bus and mediator (`WolverineFx.NATS` transport) | <https://wolverinefx.net/> |
 | **NATS** | Message transport (Core NATS + JetStream) | <https://nats.io/> |
 | **OpenTelemetry** | Traces, metrics, and logs | <https://opentelemetry.io/> |
-| **Blazor Server** | Operator admin UI framework | <https://learn.microsoft.com/aspnet/core/blazor/> |
-| **ASP.NET Core Identity** | Operator login for the admin UI | <https://learn.microsoft.com/aspnet/core/security/authentication/identity> |
 | **xUnit** | Unit testing | <https://xunit.net/> |
-| **Ubuntu chiseled .NET images** | Minimal container base images | <https://hub.docker.com/r/ubuntu/dotnet-runtime> |
-| **GitHub** | Source hosting and CI | <https://github.com/> |
+
+### Claude Code plugins & skills
+
+Development on this repo is powered by a stack of community Claude Code plugins and skills:
+
+| Plugin / Skill | What it does |
+|---|---|
+| [**superpowers**](https://github.com/obra/superpowers) | Jesse Vincent's toolkit of Claude Code skills and workflows |
+| [**context7**](https://github.com/upstash/context7) | Upstash's MCP server for fetching up-to-date library docs |
+| [**frontend-design**](https://github.com/anthropics/claude-code) | Design-quality frontend generation |
+| [**code-review**](https://github.com/anthropics/claude-code) | PR review workflow |
+| [**claude-code-setup**](https://github.com/anthropics/claude-code) | Automation recommender for Claude Code projects |
+| [**csharp-lsp**](https://github.com/anthropics/claude-code) | C# language server integration |
+| **design-taste-frontend**, **emil-design-eng**, **gpt-taste**, **high-end-visual-design**, **industrial-brutalist-ui**, **minimalist-ui**, **redesign-existing-projects**, **stitch-design-taste**, **full-output-enforcement** | Community UI/UX and output-quality skills that raise the bar on generated code |
 
 ## Built with Claude Code
 
